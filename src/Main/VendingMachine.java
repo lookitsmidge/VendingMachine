@@ -161,7 +161,7 @@ public class VendingMachine {
         } else if ( cardNo.equals("###") == false) {
             // return makePayment from loyaltyDB
 
-            return db.makePayment(cardNo, cost);
+            return db.makePayment(cardNo, cost*0.95);
         }else {
             return false;
         }
