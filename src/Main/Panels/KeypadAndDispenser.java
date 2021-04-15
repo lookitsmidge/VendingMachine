@@ -117,8 +117,8 @@ public class KeypadAndDispenser extends BuildUtilitiesVendV1 implements Runnable
                 //correct
                 if( text.charAt(0) == 'A' || text.charAt(0) == 'B' || text.charAt(0) == 'C' ) {
                     //correct ---> next check
-                    if( text.charAt(1) != 'A' || text.charAt(1) != 'B' || text.charAt(1) != 'C' ) {
-                        //correct again
+                    if( text.charAt(1) != 'A' && text.charAt(1) != 'B' && text.charAt(1) != 'C' ) {
+                        print("correct");
                         if( ddb.isAvailable(text) == true ) {
                             // drink is available
 
@@ -136,6 +136,7 @@ public class KeypadAndDispenser extends BuildUtilitiesVendV1 implements Runnable
                         } else {
                             notify("Out of\nStock", 2000, "");
                         }
+
                     } else {
                         notify("Incorrect\nSelection", 2000, "");
                     }

@@ -34,7 +34,7 @@ public class DrinkViewer extends BuildUtilitiesVendV1 implements Runnable{
         centerRenderer.setHorizontalAlignment( SwingConstants.CENTER );
         tableDrinks.setDefaultRenderer(String.class, centerRenderer);
 
-        addTable(tableDrinks, panel, 1, 100, 248, 500);
+        addTable(tableDrinks, panel, 1, 100, 248, 300);
 
     }
 

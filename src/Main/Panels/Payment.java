@@ -57,7 +57,7 @@ public class Payment extends BuildUtilitiesVendV1 implements Runnable, ActionLis
 
         addTextField(txtCardNo, panel, 10, 400, 100, 50);
 
-        addButton(this, panel, btnSubmitCard, 10, 450, "Submit Number",
+        addButton(this, panel, btnSubmitCard, 10, 450, "Scan",
                 100, 50, "THis button will submit the card number");
 
         print("Finished LoyaltyScan");
